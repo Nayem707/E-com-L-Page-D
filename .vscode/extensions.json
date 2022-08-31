@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "xabikos.javascriptsnippets",
+        "myml.vscode-markdown-plantuml-preview",
+        "esbenp.prettier-vscode",
+        "jebbs.plantuml"
     ]
 }
