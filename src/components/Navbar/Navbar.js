@@ -79,10 +79,22 @@ const Navbar = () => {
                   </FaUserPlus>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item>Login</Dropdown.Item>
                   <Dropdown.Item>
-                    <NavLink className="nav-link" style={activCss} to="/">
-                      Home
+                    <NavLink
+                      className="nav-link"
+                      style={activCss}
+                      to="/logingpage"
+                    >
+                      Login
+                    </NavLink>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <NavLink
+                      className="nav-link"
+                      style={activCss}
+                      to="/signuppage"
+                    >
+                      Sign Up
                     </NavLink>
                   </Dropdown.Item>
                 </Dropdown.Menu>

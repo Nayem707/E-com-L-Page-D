@@ -8,17 +8,21 @@ import Navbar from "./components/Navbar/Navbar";
 import Cart from "./page/Cart";
 // import TestPage from './components/test/TestPage'
 
+import SignUpPage from "./components/LoginPage/SignUpPage";
+import LogingPage from "./components/LoginPage/LogingPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='cart' element={<Cart />} />
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="signuppage" element={<SignUpPage />} />
+        <Route path="logingpage" element={<LogingPage />} />
 
-        <Route path='invoices' element={<Invoices />}>
+        <Route path="invoices" element={<Invoices />}>
           <Route
             index
             element={
@@ -28,10 +32,10 @@ function App() {
             }
           />
 
-          <Route path=':invoiceId' element={<Invoice />} />
-             </Route>
+          <Route path=":invoiceId" element={<Invoice />} />
+        </Route>
 
-           <Route path='*' element={<p>404 not</p>} />
+        <Route path="*" element={<p>404 not</p>} />
       </Routes>
     </BrowserRouter>
   );
